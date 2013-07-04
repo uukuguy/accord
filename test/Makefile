@@ -1,4 +1,6 @@
-CFLAGS += -g -O3 -Wall -Wstrict-prototypes -I../include
+#CFLAGS += -g -O3 -Wall -Wstrict-prototypes -I../include
+#CFLAGS += -D_GNU_SOURCE
+CFLAGS += -ggdb -Wall -Wstrict-prototypes -I../include
 CFLAGS += -D_GNU_SOURCE
 CFLAGS += $(shell pkg-config --cflags glib-2.0)
 LIBS += -lpthread

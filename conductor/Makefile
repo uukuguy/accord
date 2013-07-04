@@ -1,7 +1,9 @@
 sbindir ?= $(PREFIX)/sbin
 
-CFLAGS += -g -O3 -Wall -Wstrict-prototypes -I../include
-CFLAGS += -D_GNU_SOURCE -DNDEBUG
+#CFLAGS += -g -O3 -Wall -Wstrict-prototypes -I../include
+#CFLAGS += -D_GNU_SOURCE -DNDEBUG
+CFLAGS += -ggdb -Wall -Wstrict-prototypes -I../include
+CFLAGS += -D_GNU_SOURCE 
 LIBS += -lpthread -ldb -lcpg
 
 PROGRAMS = conductor

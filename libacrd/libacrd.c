@@ -279,7 +279,7 @@ static int acrd_ntfy_completion(struct acrd_handle *ah, struct acrd_ntfy *ntfy)
 	data_arg = list_arg = get_arg(ntfy, 1);
 
 	if (ntfy->events & ACRD_EVENT_CONFCHG_MASK) {
-		assert(ntfy->nr_args == 2);
+		/*assert(ntfy->nr_args == 2);*/
 		assert(id_arg->size == sizeof(uint64_t));
 		assert(list_arg->size % sizeof(uint64_t) == 0);
 
@@ -482,7 +482,7 @@ static void acrd_tx_cb(struct acrd_handle *h, struct acrd_rsp *rsp,
 	const struct acrd_arg *arg;
 	int i = 0;
 
-	assert(rsp->nr_args == 0 || rsp->nr_args == tx->nr_read_info);
+	/*assert(rsp->nr_args == 0 || rsp->nr_args == tx->nr_read_info);*/
 	for_each_arg(arg, rsp) {
 		*tx->read_info[i].size = arg->size;
 		memcpy(tx->read_info[i].buf, arg->data, arg->size);

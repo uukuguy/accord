@@ -1,7 +1,9 @@
 libdir ?= $(PREFIX)/lib
 
-CFLAGS += -g -O3 -Wall -Wstrict-prototypes -I../include
-CFLAGS += -D_GNU_SOURCE -DNDEBUG -fPIC
+#CFLAGS += -g -O3 -Wall -Wstrict-prototypes -I../include
+#CFLAGS += -D_GNU_SOURCE -DNDEBUG -fPIC
+CFLAGS += -ggdb -Wall -Wstrict-prototypes -I../include
+CFLAGS += -D_GNU_SOURCE -fPIC
 
 LIBRARIES = libacrd.a libacrd.so
 LIBACRD_OBJS = libacrd.o ../lib/net.o ../lib/work.o ../lib/coroutine.o
