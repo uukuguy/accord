@@ -1,3 +1,9 @@
+###Born on the Fourth of July
+
+accord  高性能的分布式协调服务，尤其适用于写密集场景。原作者已放弃对项目的维护，2013年7月4日我接管了该项目。
+当今分布式协调服务以zookeeper最为有名，奇怪的是居然没有棋逢对手的同类项目，这在当今分布式极其活跃火爆的大环境下显得特别另类。分布式文件系统有HDFS、Riak、QFS，分布式数据库有HBASE、Voldemort，缓存有memcached 、redis，文档数据库有mongodb、couchdb。
+分布式协调服务应当有更多的选择，不应当zookeeper一枝独秀。
+
 ** Accord project **
 
 NOTE: Now, this project is marked as deprecated, because we've observed that write-intensive
